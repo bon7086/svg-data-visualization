@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Assingment 3 -->
+        <style>
+            svg{
+                height: 400px;
+                width: 400px;
+                /* position: absolute; */
+            }
+            .blue rect{
+                fill: blue;
+                stroke: black;
+                stroke-width:3;
+            }
+            .red rect{
+                fill: red;
+                stroke: black;
+                stroke-width:3;
+            }
+            .black line{
+                stroke: black;
+                stroke-width:2;
+            }
+            .black path{
+                stroke: black;
+                fill: red;
+                stroke-width:2;
+            }
+            .border{
+                border: 1px solid red;
+            }
+            .black circle{
+                stroke: black;
+                fill: yellow;
+                stroke-width:2;
+            }
+        </style>
+    </head>
+    <body>
+        <svg id="blue_bar_chart" class="blue">
+            <rect x="0" y="250" width="50" height="150"/>
+            <rect x="50" y="175" width="50" height="225" />
+            <rect x="100" y="175" width="50" height="225" />
+            <rect x="150" y="100" width="50" height="300" />
+            <rect x="200" y="100" width="50" height="300" />
+            <rect x="250" y="175" width="50" height="225" />
+            <rect x="300" y="175" width="50" height="225" />
+            <rect x="350" y="250" width="50" height="150" />
+        </svg> 
+        <svg id="red_bar_chart" class="red">
+            <rect x="0" y="250" width="50" height="150"/>
+            <rect x="50" y="175" width="50" height="225" />
+            <rect x="100" y="175" width="50" height="225" />
+            <rect x="150" y="100" width="50" height="300" />
+            <rect x="200" y="100" width="50" height="300" />
+            <rect x="250" y="175" width="50" height="225" />
+            <rect x="300" y="175" width="50" height="225" />
+            <rect x="350" y="250" width="50" height="150" />
+        </svg>
+
+        <svg id="line_line_chart" class="black">
+            <line x1="0" y1="400" x2="50" y2="250"></line>
+            <line x1="50" y1="250" x2="100" y2="175"></line>
+            <line x1="100" y1="175" x2="150" y2="100"></line>
+            <line x1="150" y1="100" x2="250" y2="100"></line>
+            <line x1="200" y1="100" x2="250" y2="100"></line>
+            <line x1="250" y1="100" x2="300" y2="175"></line>
+            <line x1="300" y1="175" x2="350" y2="250"></line>
+            <line x1="350" y1="250" x2="400" y2="400"></line>
+        </svg>
+
+        <svg id="line_line_chart" class="black">
+            <line x1="0" y1="400" x2="50" y2="350"/>
+            <line x1="50" y1="350" x2="100" y2="350"/>
+            <line x1="100" y1="350" x2="150" y2="300"/>
+            <line x1="150" y1="300" x2="200" y2="300"/>
+            <line x1="200" y1="300" x2="250" y2="350"/>
+            <line x1="250" y1="350" x2="300" y2="350"/>
+            <line x1="300" y1="350" x2="350" y2="400"/>
+        </svg> 
+        <!-- This version doesn't accurately represent the data, but it looks like the verson on the assignment -->
+
+        <svg id="path_line_chart" class="black">
+            <path d="
+                M 0,400
+                L 50, 250
+                M 50, 250
+                L 100, 175
+                M 100, 175
+                L 150, 100
+                M 150, 100
+                L 250, 100
+                M 250, 100
+                L 300, 175
+                M 300, 175
+                L 350, 250
+                M 350, 250
+                L 400, 400
+            "/>
+        </svg>
+        <svg id="pie_chart" class="black">
+            <circle
+                cx="200"
+                cy="200"
+                r="200"
+                z
+            >
+            </circle>
+            <path d="
+                M 200,200
+                L 400,200
+                C 400,200 400,0 200,0
+                M 200,200
+                L 200,0
+            ">
+            </path>
+        </svg>
+        <script>
+            //javascript here...
+        </script>
+    </body>
+</html>
